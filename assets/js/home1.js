@@ -56,12 +56,14 @@ function validateEmail() {
 
     var email = $("#email").val();
     var regex_email = /^([a-z\d\.-]+)\.(dcastalia+)@(gmail+)\.([a-z]{2,8})$/;
-    if (regex_email.test(email)) {
-       return true;
+    if (!regex_email.test(email)) {
+        $('.btn2').prop('disabled',true);
 
     } else {
+        $('.btn2').prop('disabled',false);
+        return true;
        
-        return false;
+        
         
     }
 
@@ -95,10 +97,10 @@ function validatePhone() {
     var regex_phone = /^(?:\+88|88)?(01[3-9]\d{8})$/;
     if (regex_phone.test(phone)) {
        return true;
-
     } else {
        
-        return false;
+       return false;
+       
         
     }
 
