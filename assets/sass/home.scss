@@ -1,0 +1,20 @@
+@import "reset";
+@import "var";
+@import "fonts";
+
+
+.forms{
+    margin-top:200px;
+}
+span.error{
+    color:red;
+    justify-content: center;
+    margin-top:180px;
+}
+
+.success{
+    color:green;
+}
+
+
+@import "home-responsive";
